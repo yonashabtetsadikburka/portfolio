@@ -1,1 +1,5 @@
+/FutsalManager /404.html 404
+/FutsalManager/* /404.html 404
+/38-0 /404.html 404
+/38-0/* /404.html 404
 https://www.burkasolutions.dev/* https://burkasolutions.dev/:splat 301
