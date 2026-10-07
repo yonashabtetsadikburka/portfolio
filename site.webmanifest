@@ -1,0 +1,18 @@
+{
+  "name": "Yonas Habtetsadik Burka — Frontend Developer",
+  "short_name": "BurkaSolutions",
+  "description": "Portfolio di Yonas Habtetsadik Burka, sviluppatore frontend e studente Data Management & Coding.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#0e1117",
+  "theme_color": "#0e1117",
+  "lang": "it",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
