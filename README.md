@@ -30,8 +30,9 @@ _redirects          # www -> apex 301, vecchi path /FutsalManager/* e /38-0/* ->
 
 ## Note
 
-- La Content-Security-Policy è in `Report-Only` in `_headers`: verificare i
-  report nel browser prima di passare a enforcing.
+- La Content-Security-Policy è enforcing in `_headers`: lo `sha256-...`
+  autorizza l'inline script anti-flash in `<head>` — se lo modifichi,
+  ricalcola l'hash e aggiornalo.
 - Pesi dei font Google: verificare periodicamente che tutti i pesi caricati
   siano davvero usati.
 

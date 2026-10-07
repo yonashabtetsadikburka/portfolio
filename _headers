@@ -7,7 +7,9 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Cross-Origin-Opener-Policy: same-origin
   Cross-Origin-Resource-Policy: same-origin
-  Content-Security-Policy-Report-Only: default-src 'self'; script-src 'self' cdnjs.cloudflare.com; style-src 'self' fonts.googleapis.com cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' fonts.gstatic.com cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'
+  # NOTA: lo sha256 autorizza l'inline script anti-flash tema in <head>.
+  # Se modifichi quello script, ricalcola l'hash e aggiornalo qui o il tema lampeggia al reload.
+  Content-Security-Policy: default-src 'self'; script-src 'self' cdnjs.cloudflare.com 'sha256-r3FnVnP9W/uaNhK9XkZqH3GIfK4TudOQGYTwoNIjGR4='; style-src 'self' fonts.googleapis.com cdnjs.cloudflare.com 'unsafe-inline'; font-src 'self' fonts.gstatic.com cdnjs.cloudflare.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'self'; base-uri 'self'; form-action 'self'
 
 # Asset statici: cache lunga (hanno nomi stabili, bump manuale se cambiano)
 /assets/*
